@@ -1,0 +1,151 @@
+.sideBar{
+
+    position: fixed;
+    margin-top: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #202020;
+    min-width: 300px;
+    height: 100%;
+    overflow-y: scroll;
+    transition: 1s;
+    list-style-type: none;
+
+}
+.sideBar:hover{
+
+    background-color: #303030;
+    margin-bottom: 4%;
+    transition: 1s;
+
+}
+
+.sideBarItems{
+
+    position: relative;
+    color: white;
+    width: 250px;
+    margin: 0px auto;
+    margin-top: 10px;
+    transition: 1s;
+
+}
+
+
+
+.sideBarItem{
+
+    position: relative;
+    background-color: rgb(133, 0, 0);
+    border-top: 2px solid yellow;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 2%;
+    transition: 1s;
+
+}
+.sideBarItem:hover{
+
+    
+    background-color: rgb(131, 74, 0);
+    transition: 0.2s;
+    
+
+}
+
+.sideBarSubItem{
+
+    position: relative;
+    background-color: rgb(133, 53, 0);
+    border-top: 2px solid yellow;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 2%;
+    transition: 1s;
+
+}
+.sideBarSubItem:hover{
+
+    
+    background-color: rgb(131, 129, 0);
+    transition: 0.2s;
+    
+
+}
+
+.hide{
+
+    display: block;
+    opacity: 0;
+    max-height: 0.01px;
+    z-index: -99;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    transition: 1s;
+}
+.show2{
+
+    opacity: 1;
+    transition: 1s;
+
+}
+.hide2{
+
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    max-height: 0.01px;
+    z-index: -99;
+    transition: 1s;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(151, 75, 75); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e63838; 
+}

@@ -1,0 +1,36 @@
+<div class="sideBar">
+        <div class="sideBarItems container">
+          <div (click)="this.shouldShow=!this.shouldShow" class="sideBarItem rounded">List</div>
+          <div [ngClass]="{show2:shouldShow, hide2:!shouldShow}">
+          <div  (click)="this.showSpells=!this.showSpells" class="sideBarSubItem rounded">Spells</div>
+          <div  [ngClass]="{sideBarItem : showSpells ,hide:!showSpells}" class="rounded">
+              <li *ngFor="let person of allPerson;index as i">
+                  {{person.age+" "+person.id+" "+person.name+" "+i}}
+                </li>
+          </div>
+          <div (click)="this.showTraps=!this.showTraps" class="sideBarSubItem rounded">Traps</div>
+          <div  [ngClass]="{sideBarItem : showTraps ,hide:!showTraps}" class="rounded">
+              <li *ngFor="let person of allPerson;index as i">
+                    <a href="www.google.com">{{person.age+" "+person.id+" "+person.name+" "+i}}</a>                </li>
+                <li *ngFor="let person of allPerson;index as i">
+                        <a href="www.google.com">{{person.age+" "+person.id+" "+person.name+" "+i}}</a>                      </li>
+                      <li *ngFor="let person of allPerson;index as i">
+                            <a href="www.google.com">{{person.age+" "+person.id+" "+person.name+" "+i}}</a>
+                          </li>
+          </div>
+          <div (click)="this.showTerrain=!this.showTerrain" class="sideBarSubItem rounded">Terrains</div>
+          <div  [ngClass]="{sideBarItem : showTerrain ,hide:!showTerrain}" class="rounded">
+              <li *ngFor="let person of allPerson;index as i">
+                  {{person.age+" "+person.id+" "+person.name+" "+i}}
+                </li>
+          </div>
+          <div (click)="this.showChar=!this.showChar" class="sideBarSubItem rounded">Characters</div>
+          <div  [ngClass]="{sideBarItem : showChar ,hide:!showChar}" class="rounded">
+              <li *ngFor="let person of allPerson;index as i">
+                  {{person.age+" "+person.id+" "+person.name+" "+i}}
+                </li>
+          </div>
+          <div class="sideBarItem" style="background: #000;">filler</div>
+            </div>
+        </div>
+      </div>
